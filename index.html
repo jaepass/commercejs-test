@@ -1,0 +1,113 @@
+<!---
+This is a basic javascript checkout built with Commerce.js (http://commercejs.com).
+Tutorial: Checkout Tutorial (Basic) - http://commerce.js.com/docs/overview/checkout-tutorial/
+!-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Commerce.js Checkout</title>
+   <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.serializeJSON/2.7.2/jquery.serializejson.js"></script>
+  
+  <script type="text/javascript" src="https://cdn.chec.io/v1/commerce.js"></script>
+  
+
+</head>
+<body>
+
+  <h1 class="title">Commerce.js Checkout</h1>
+
+<form id="checkout">
+
+  <div id="cart">
+    <div class="row">
+    <h2>Test Product (Basic) - $49.99</h2>
+    <label>Quantity</label><input class="select-num" name="line_items[item_7RyWOwmK5nEa2V][quantity]" type="number" value="1">
+    </div>
+  </div>
+
+  <div id="extrafields" class="row">
+    <h3>Extrafields</h3>
+  </div>
+
+  <div id="customer" class="block">
+
+    <h3>Customer Details</h3>
+
+    <div class="row">
+
+      <label>First Name</label>
+
+      <input type="text" name="customer[firstname]" value="" placeholder="First Name">
+
+    </div>
+
+
+    <div class="row">
+
+      <label>Last Name</label>
+
+      <input type="text" name="customer[lastname]" value="" placeholder="Last Name">
+
+
+    </div>
+
+
+    <div class="row">
+
+      <label>Email</label>
+
+      <input type="text" name="customer[email]" value="" placeholder="Email">
+
+    </div>
+
+  </div>
+
+  <div id="payment" class="block">
+
+    <h3>Payment</h3>
+
+    <div class="row">
+      <input type="radio" name="payment[gateway]" value="test_gateway" checked> Test Gateway
+    </div>
+    <hr>
+    <div class="row">
+      <label>Card Number</label>
+      <input type="text" name="payment[card][number]" value="4242 4242 4242 4242" placeholder="Card Number">
+    </div>
+    <div class="row">
+      <label>Expiry Month</label>
+      <input type="text" name="payment[card][expiry_month]" value="01" placeholder="Expiry Month">
+    </div>
+
+    <div class="row">
+      <label>Expiry Year</label>
+      <input type="text" name="payment[card][expiry_year]" value="2021" placeholder="Expiry Year">
+    </div>
+
+    <div class="row">
+      <label>Security Code (CCV)</label>
+      <input type="text" name="payment[card][cvc]" value="123" placeholder="Security Code (CCV)">
+    </div>
+
+    <div class="row">
+      <label>Billing Postal/Zip Code</label>
+      <input type="text" name="payment[card][postal_zip_code]" value="94107" placeholder="Billing Postal/Zip Code">
+    </div>
+
+  </div>
+  <button type="button" onclick="capture();">Buy Now</button>
+
+</form>
+
+
+<script src="script.js"></script>
+</body>
+<html>

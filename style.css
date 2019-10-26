@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+body { 
+	text-align: center; 
+	font-family:'Open Sans', sans-serif; 
+	font-weight:400; 
+	font-size: 14px; 
+	letter-spacing: 1.15px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.title{
+	color: #2AC1DE;
+}
+
+h3{
+	color: #2AC1DE;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+form{
+	box-shadow: 0 0 13px rgba(191, 191, 191, 0.3);
+	padding: 20px 100px;
+	margin: 0 auto;
+	position: relative;
+	background-color:rgb(250, 250, 250);
+}
+
+#checkout { 
+	display: inline-block; 
+	margin:0 auto; 
+	text-align: left; 
+}
+label { 
+	font-weight:600; 
+	padding-right: 10px;
+}
+
+.block {
+	margin: 25px auto;
+}
+.row { 
+	margin: 5px auto; 
+	text-align: left; 
+	padding-bottom: 20px;
+}
+input, select { 
+	padding: 5px 2px;
+	border: 1px solid rgb(199, 199, 199);
+	border-radius: 3px;
+	width: 200px;
+}
+
+hr{
+	margin-bottom: 30px;
+}
+
+input { 
+	line-height: 1.6em; 
+	box-shadow: 0 0 3px rgba(215, 215, 215, 0.3);
+}
+button { 
+	font-size: 13px; 
+	font-weight: 400;
+	padding: 12px 30px;
+	border-radius: 3px;
+	border: 1.5px solid #2AC1DE;
+	background-color: #2AC1DE;
+	box-shadow: 0 0 10px rgba(120, 120, 120, 0.3);
+	cursor: pointer;
+	color: white;
+	width: 375px;
+	font-family: 'Montserrat', sans-serif; 
+	text-transform: uppercase;
+	transition: all 0.3s ease-in-out;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
+
+button:hover,
+button:active,
+button:focus {
+	background-color: white;
+	color: #2AC1DE;
+	border: 1.5px solid #2AC1DE;
+}
+
+@media (max-width: 580px){
+	form{
+		padding: 20px 30px;
+	}
+
+	button{
+		width: 275px;
+		align-items: left;
+	}
+}
